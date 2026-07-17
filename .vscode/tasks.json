@@ -1,0 +1,23 @@
+{
+   "version": "2.0.0",
+   "tasks": [
+      {
+         "label": "Run current code on Tufty",
+         "type": "shell",
+         "command": "mpremote connect /dev/cu.usbmodem101 run ducky.py",
+         "problemMatcher": []
+      },
+      {
+         "label": "Upload main.py to Tufty",
+         "type": "shell",
+         "command": "mpremote connect /dev/cu.usbmodem101 fs cp ducky.py :ducky.py",
+         "problemMatcher": []
+      },
+      {
+         "label": "Reset Tufty",
+         "type": "shell",
+         "command": "mpremote connect /dev/cu.usbmodem101 reset",
+         "problemMatcher": []
+      }
+   ]
+}

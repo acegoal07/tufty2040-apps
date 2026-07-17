@@ -1,0 +1,15 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.extraPaths": [
+        "./typings"
+    ],
+    "tasks": [
+        {
+            "label": "Run on Tufty",
+            "type": "shell",
+            "command": "mpremote connect COM5 run src/main.py",
+            "problemMatcher": []
+        }
+    ]
+}
